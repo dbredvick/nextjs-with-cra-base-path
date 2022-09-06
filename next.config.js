@@ -5,9 +5,13 @@ const nextConfig = {
    async rewrites() {
     return [
       {
-        "source": "/react:match*",
-        "destination": "https://create-react-app-base-path.vercel.zone:match*"
+        "source": "/react",
+        "destination": "https://create-react-app-base-path.vercel.zone/"
       },
+      {
+        "source": "/react/:match*",
+        "destination": "https://create-react-app-base-path.vercel.zone/:match*"
+      }
     ]
   },
 }
