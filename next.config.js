@@ -8,6 +8,10 @@ const nextConfig = {
         source: '/react',
         destination: 'https://create-react-app-base-path.vercel.zone/',
       },
+      {
+      "source": "/react/:match*",
+      "destination": "https://create-react-app-base-path.vercel.zone/react/:match*"
+    }
     ]
   },
 }
